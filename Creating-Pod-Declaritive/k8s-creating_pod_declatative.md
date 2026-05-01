@@ -1,4 +1,4 @@
-🔹 YAML Structure
+🔹 YAML Structure : Below is the yaml explanation.
 
 🟢 1. API & Object Type
 apiVersion: v1
