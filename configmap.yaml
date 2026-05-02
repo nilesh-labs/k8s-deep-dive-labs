@@ -1,4 +1,4 @@
-#We store configuration in a ConfigMap and inject it into Pods either as environment variables or as mounted files using volumes.
+# We store configuration in a ConfigMap and inject it into Pods either as environment variables or as mounted files using volumes.
 
 apiVersion: v1
 kind: ConfigMap
