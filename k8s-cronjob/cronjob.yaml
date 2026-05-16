@@ -1,0 +1,22 @@
+# CronJob runs a Pod on a schedule. This scenario shows how K8s Cron job object works on minikube
+
+
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: hello
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: hello
+            image: busybox
+            imagePullPolicy: IfNotPresent
+            command:
+            - /bin/sh
+            - -c
+            - date; echo Hello from K8S cluster
+          restartPolicy: OnFailure
